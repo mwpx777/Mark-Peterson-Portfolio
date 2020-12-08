@@ -8,11 +8,13 @@ body {
     background-size: cover;
     height: 100%;
 }
+
+
 /*MWP header start*/
 img {
     display: block;
     width: 80%;
-    margin: auto;
+    margin: 10rem;
 }
 .fade-in{
     animation: fadeIn ease 8s; /*cite this section*/
@@ -52,30 +54,48 @@ nav ul li a:hover {
 /*nav section end*/
 
 /*about me section start*/
+.body-grid {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3;
+}
+
 .about-me{
     display: flex;
-    justify-content: space-evenly;
-    width: 70%;
-    padding: 1em;
-    margin: auto;
+    align-items: flex-start;
 }
 
-#about-me {
-    width:auto;
-    padding: 20px;
+.about-me-image {
+    width: 100%;
+    padding: 0;
     
 }
-
-.paragraph p {
-    padding: 20px;
-    width: auto;
-    color: lightgrey;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
+#about-me {
+    grid-column: 1;
+    grid-row: 1;
+    width: 50%;
 }
+   
+.paragraph {
+    width: 50%;
+}   
+    
+ p {
+    color: lightgrey;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+ .pic {
+     width:30%;
+ }
 
+    
 #MWP-Picture {
-    padding: 20px;
+    
+    justify-content: center;
+    align-items: center;
+    
 }
 /*about me section end*/
 
@@ -89,17 +109,39 @@ nav ul li a:hover {
 }
 
 #portfolio {
-    width: auto;
-    padding: 20px;
-    
+    width: 100%;
+    grid-column: 1;
+    grid-row: 2;
 }
 
-.portfolio-images a{
-    width: 30%;
+.portfolio-images {
+    width: 100%;
     display:grid;
-    grid-column: 1fr, (repeat 3);
-    grid-row: 1fr, (repeat 3);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1em;
 
+}
+
+#image1 {
+    width:100%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+#image2 {
+    width: 100%;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+#image3 {
+    width: 100%;
+    height: 100%;
+    grid-column: 3;
+    grid-row: 1;
 }
 /*portfolio section end*/
 
@@ -107,18 +149,20 @@ nav ul li a:hover {
 .contact {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     width: 70%;
     padding: 1em;
     margin: auto;
 }
 #contact {
     width:auto;
+    margin: 0;
 }
 
 .contact-info ul{
     display:flex;
     width:auto;
-    justify-content: flex-start;
+    
 }
 
 .contact-info ul li {  
@@ -128,16 +172,11 @@ nav ul li a:hover {
     font-family: Arial, Helvetica, sans-serif;
     }
 
-.contact-info ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2em;
-    padding: .1em;
+.contact-info img {
+    fill: white;
+    padding: 1em;
+    width: 20%
 }
 
-.contact-info ul li a:hover {
-    background-color: white;
-    color: black;
-    padding: .1em;
 
 /*contact section end*/
