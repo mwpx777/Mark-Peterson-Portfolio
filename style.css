@@ -54,49 +54,33 @@ nav ul li a:hover {
 /*nav section end*/
 
 /*about me section start*/
-.body-grid {
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3;
-}
 
-.about-me{
+
+.about-me-group{
     display: flex;
-    align-items: flex-start;
-}
-
-.about-me-image {
-    width: 100%;
-    padding: 0;
-    
-}
-#about-me {
-    grid-column: 1;
-    grid-row: 1;
-    width: 50%;
-}
-   
-.paragraph {
-    width: 50%;
-}   
-    
- p {
-    color: lightgrey;
-    font-size: 2em;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
- .pic {
-     width:30%;
- }
-
-    
-#MWP-Picture {
-    
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: auto;
+   
     
 }
+.about-me-image {
+    width: 25%;
+    justify-content: center;
+    
+    
+}
+
+.paragraph {
+    width: 30%;
+    
+}
+     
+.MWP-Picture {
+    width: 25%;
+    
+}
+
 /*about me section end*/
 
 /*portfolio section start*/
@@ -108,22 +92,20 @@ nav ul li a:hover {
     margin: auto;
 }
 
-#portfolio {
+.portfolio-text {
     width: 100%;
     grid-column: 1;
     grid-row: 2;
 }
 
-.portfolio-images {
+.portfolio-grid {
     width: 100%;
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-gap: 1em;
+    display:flex;
+ 
 
 }
 
-#image1 {
+/*#image1 {
     width:100%;
     height: auto;
     grid-column: 1;
@@ -154,25 +136,25 @@ nav ul li a:hover {
     padding: 1em;
     margin: auto;
 }
-#contact {
+.contact-image {
     width:auto;
     margin: 0;
 }
 
-.contact-info ul{
+.contact-icons ul{
     display:flex;
     width:auto;
     
 }
 
-.contact-info ul li {  
+.contact-icons ul li {  
     padding:10px;
     margin:10px;
     list-style-type: none;
     font-family: Arial, Helvetica, sans-serif;
     }
 
-.contact-info img {
+.contact-icons img {
     fill: white;
     padding: 1em;
     width: 20%
@@ -180,3 +162,4 @@ nav ul li a:hover {
 
 
 /*contact section end*/
+
