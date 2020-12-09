@@ -95,47 +95,95 @@ nav ul li a:hover {
 /*about me section end*/
 
 /*portfolio section start*/
-.portfolio {
-    display:flex;
-    justify-content: space-evenly;
-    width: 70%;
-    padding: 1em;
-    margin: auto;
+ .portfolio {
+    display: flex;
+    width: 100%;
+        background-color: orange;
+} 
+
+/* Portfolio section*/
+.portfolio-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    border: 10px solid yellow;
 }
 
 .portfolio-text {
+    
+    margin: 5%;
+    border: 10px solid blue;
+    
+}
+#portfolio-image {
     width: 100%;
+    margin: 0;
+     
+}
+
+
+.portfolio-grid{
+    margin: 5%;
+    border: 10px solid blue;
+    width:650px;
+    height:650px;
+}
+
+.container {
+    margin: 5%;
+    display: grid;
+    border: 10px solid orange;
+    background-color: #ccc;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px 20px;
+    
+   
+    
+}
+.container img {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+#mwp-web-solutions {
+    grid-column: 1 / 1;
+    
+}
+#locker-mint {
+    grid-column: 2  ;
+    grid-row: 1;
+    
+}
+#run-buddy {
+    grid-column: 3 / 3;
+    grid-row: 1 / span 2;
+}
+
+#survey-form {
     grid-column: 1;
     grid-row: 2;
 }
 
-.portfolio-grid {
-    width: 100%;
-    display:flex;
- 
-
-}
-
-/*#image1 {
-    width:100%;
-    height: auto;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-#image2 {
-    width: 100%;
-    height: 100%;
+#garage-kitty {
     grid-column: 2;
-    grid-row: 1;
+    grid-row: 2;
 }
 
-#image3 {
-    width: 100%;
-    height: 100%;
-    grid-column: 3;
-    grid-row: 1;
+#pirate {
+    grid-column: 1;
+    grid-row:3;
 }
+
+#tombstone {
+    grid-column: 2 / span 2;
+    grid-row: 3
+
+}
+
+
 /*portfolio section end*/
 
 /*contact section start*/
