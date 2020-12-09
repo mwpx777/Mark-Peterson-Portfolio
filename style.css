@@ -6,6 +6,7 @@
 body {
     background-image:  url("/Assets/gradient-background.jpg") ;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 100%;
 }
 
@@ -60,28 +61,25 @@ nav ul li a:hover {
     display: flex;
     justify-content: space-evenly;
     width: 80%;
-    margin: auto;
+    margin: 10%;
   }
 
-.flex-row1 {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-}
-  
 
-#about-me-image {
-    width: 500px;
-    margin: 0 1.5em;
+  
+h2 {
+    width:auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    color:lightgrey;
+
 }
+
 
 
 .paragraph p{
     color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.7em;
+    font-size: 2em;
     margin: 0 1.5em;
 }
 
@@ -95,45 +93,56 @@ nav ul li a:hover {
 /*about me section end*/
 
 /*portfolio section start*/
- .portfolio {
-    display: flex;
-    width: 100%;
-        background-color: orange;
-} 
 
-/* Portfolio section*/
+.portfolio-container h2{
+    width:auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    color:lightgrey;
+    margin: 5% auto;
+
+}
+
 .portfolio-container{
+    border: 5px orange solid;
     display: flex;
-    height: 100vh;
-    width: 100%;
-    border: 10px solid yellow;
+    width:80%;
+    justify-content: space-evenly;
+    margin: 5% auto;
+   
+    /*border: 10px solid yellow;*/
 }
 
 .portfolio-text {
+    border: 5px solid blue;
+    width: 30%;
+   
     
-    margin: 5%;
-    border: 10px solid blue;
+    padding:10px 30px 0 0;
+    /*border: 10px solid blue;*/
     
 }
-#portfolio-image {
-    width: 100%;
-    margin: 0;
-     
-}
+
 
 
 .portfolio-grid{
-    margin: 5%;
-    border: 10px solid blue;
-    width:650px;
-    height:650px;
+    
+    margin: 3%;
+    /*border: 10px solid blue;*/
+    width:70%;
+    height:50%;
+    justify-content: center;
+
 }
 
 .container {
-    margin: 5%;
+    border: 5px solid red;
+    margin: auto;
+    width:100%;
+    height:50%;
     display: grid;
-    border: 10px solid orange;
-    background-color: #ccc;
+   /* border: 10px solid orange;
+    background-color: #ccc;*/
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 20px 20px;
@@ -188,28 +197,60 @@ nav ul li a:hover {
 
 /*contact section start*/
 
+#contact{
+    /*border:10px solid blue;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin:20% auto 0 auto;
+}
+
+.contact-text {
+    justify-content: center;
+}
+
+.flex-row1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
+  }
+
 
 #contact-image {
-    width: 400px;
-    margin: 0 1.5em;
-}
-
-.contact-icons ul{
-    display:flex;
-   
-    
-}
-
-.contact-icons ul li {  
-    list-style-type: none;
+    width: 100%;
     justify-content: center;
-    
- }
-
-.contact-icons img {
-    width: 30%;
-    justify-content: space-around;
+    align-items: center;
+            
 }
+
+.contact-icons ul {
+    display:flex;
+    justify-content: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-icons ul li {
+    padding:10px;
+    margin:10px;
+    list-style-type: none;
+    }
+
+.contact-icons ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    padding: .5em;
+}
+ 
+
+.contact-icons ul li a:hover {
+    
+    color:014871;
+    padding: .1em;
+   
+ 
 
 
 /*contact section end*/
