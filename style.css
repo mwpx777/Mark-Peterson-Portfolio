@@ -4,7 +4,7 @@
 }
 
 body {
-    background-image:  url("Assets\gradient-background.jpg") ;
+    background-image:  url("/Assets/gradient-background.jpg") ;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
@@ -18,7 +18,7 @@ img {
     margin: 10rem;
 }
 .fade-in{
-    animation: fadeIn ease 8s; /*cite this section*/
+    animation: fadeIn ease 8s; 
 }
 
 @keyframes fadeIn {
