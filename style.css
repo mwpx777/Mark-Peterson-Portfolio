@@ -8,15 +8,15 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100%;*/
-    background-color:teal;
+    background:linear-gradient(#014871, #A0EBCF, #014871)
 }
 
 
 /*MWP header start*/
 img {
     display: block;
-    width: 80%;
-    margin: 10rem;
+    width: 90%;
+    margin: auto;
 }
 .fade-in{
     animation: fadeIn ease 8s; 
@@ -44,14 +44,17 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
-    padding: .1em;
+    font-size: 120%;
+    padding: .5em;
+    text-shadow: 0 0 10px black;
 }
 
 nav ul li a:hover {
-    background-color: white;
-    color: black;
-    padding: .1em;
+    background-color:  #A0EBCF;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black;
+    text-shadow: none;
+    padding: 10px;
 }
 /*nav section end*/
 
@@ -67,11 +70,12 @@ nav ul li a:hover {
 
 
   
-h2 {
+#about-me h2 {
     width:auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3em;
     color:lightgrey;
+    text-shadow: 0 0 10px rgb(88, 88, 88);
 
 }
 
@@ -80,120 +84,126 @@ h2 {
 .paragraph p{
     color: lightgrey;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2em;
-    margin: 0 1.5em;
+    font-size: 200%;
+    margin:auto;
+    width: 80%;
 }
 
      
 #MWP-Picture {
     width: 100%;
-    margin: 0;
+    margin: auto;
+    border: 10px solid rgb(153, 152, 152);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(25,25,25);
+
    }
 
 
 /*about me section end*/
 
 /*portfolio section start*/
+.portfolio-container{
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+    margin: 5% auto;
+}
 
 .portfolio-container h2{
     width:auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3em;
-    color:lightgrey;
-    margin: 5% auto;
-
+    color:rgb(236, 234, 234);
+    margin: 0, auto;
+    justify-content: start;
+    text-shadow: 0 0 10px rgb(88, 88, 88);
 }
-
-.portfolio-container{
-    
-    display: flex;
-    width:80%;
-    justify-content: space-evenly;
-    margin: 5% auto;
-   
-    /*border: 10px solid yellow;*/
-}
-
-.portfolio-text {
-    
-    width: 30%;
-   
-    
-    padding:10px 30px 0 0;
-    /*border: 10px solid blue;*/
-    
-}
-
-
 
 .portfolio-grid{
-    
-    margin: 3%;
-    /*border: 10px solid blue;*/
     width:70%;
     height:50%;
     justify-content: center;
 
 }
 
-.container {
-  
-    margin: auto;
-    width:100%;
-    height:50%;
+.grid-container {
     display: grid;
-   /* border: 10px solid orange;
-    background-color: #ccc;*/
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    gap: 20px 20px;
-    
-   
-    
+    gap: 40px 40px;
+  }
+  
+  .MWP-Web { grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        text-shadow: 0 0 5px black;
+    }           
+  .Locker-Mint { grid-area: 1 / 2 / 2 / 3;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color:white;
+        text-shadow: 0 0 5px black;
+     }
+  
+  .Run-Buddy { grid-area: 1 / 3 / 2 / 4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white; 
+    text-shadow: 0 0 5px black;
 }
-.container img {
-  margin: 0;
-  width: 100%;
-  height: 100%;
+  
+  .Run-Buddy { grid-area: 1 / 3 / 3 / 4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white; 
+    text-shadow: 0 0 5px black;
+}
+  
+  .Tombstone { grid-area: 3 / 2 / 4 / 4;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-shadow: 0 0 5px black;
+ }
+  
+  .Garage-Kitty { grid-area: 2 / 2 / 3 / 3; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-shadow: 0 0 5px black;
+}
+  
+  .Survey-Form { grid-area: 2 / 1 / 3 / 2;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white; 
+    text-shadow: 0 0 5px black;
+}
+  
+  .Legendary-Pirate { grid-area: 3 / 1 / 4 / 2; 
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:white;
+    text-shadow: 0 0 5px black;
+}
+  
+  .grid-container img{
+      margin:auto;
+      height: 100%;
+      width: 100%;
+  }
+.MWP-Web span {
+    text-align: center;
+}
+  
+ 
+
+.grid-container img:hover{
+    filter: grayscale(80%);
 
 }
-
-#mwp-web-solutions {
-    grid-column: 1 / 1;
-    
-}
-#locker-mint {
-    grid-column: 2  ;
-    grid-row: 1;
-    
-}
-#run-buddy {
-    grid-column: 3 / 3;
-    grid-row: 1 / span 2;
-}
-
-#survey-form {
-    grid-column: 1;
-    grid-row: 2;
-}
-
-#garage-kitty {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-#pirate {
-    grid-column: 1;
-    grid-row:3;
-}
-
-#tombstone {
-    grid-column: 2 / span 2;
-    grid-row: 3
-
-}
-
-
 /*portfolio section end*/
 
 /*contact section start*/
@@ -204,9 +214,17 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    margin:20% auto 0 auto;
+    margin: auto;
 }
 
+#about-me h2, #contact h2{
+    width:auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+    color:lightgrey;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+
+}
 .contact-text {
     justify-content: center;
 }
@@ -221,8 +239,7 @@ h2 {
 
 #contact-image {
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    height: 100%;
             
 }
 
@@ -241,18 +258,84 @@ h2 {
 .contact-icons ul li a {
     text-decoration: none;
     color: white;
-    font-size: 3em;
+    font-size: 200%;
     padding: .5em;
+    text-shadow: 0 0 10px black;
 }
  
 
 .contact-icons ul li a:hover {
-    
-    color:014871;
+    background-color:  #A0EBCF;
+    border-radius: 10px;
     padding: .1em;
+    box-shadow: 5px 5px 10px black;
+    text-shadow: none;
    
  
 
-
+}
 /*contact section end*/
 
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+   #about-me{
+        display:flex;
+        flex-direction:column;
+   }
+
+   #about-me h2{
+       text-align: center;
+       margin: 20px;
+   }
+    .portfolio-container{
+        display:flex;
+        flex-direction: column;
+}
+
+   #portfolio h2{
+       text-align: center;
+       margin: 20px;
+
+   }
+   .grid-container span{
+       font-size: 120%;
+   }
+
+   .portfolio-grid{
+        margin:auto;
+   }
+
+   #contact{
+    display:flex;
+    flex-direction:column;
+   }
+
+    #contact h2{
+        text-align: center;
+        margin: 30px;
+    }
+
+   .contact-icons ul li a {
+       font-size: 120%;
+   }
+   
+   #MWP-Picture{
+       margin:30px 0;
+   }
+
+
+}
+
+
+
+        
+   
+	
+
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+	
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+
+  }
