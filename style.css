@@ -379,6 +379,14 @@ nav ul li a:hover {
         margin: 10% 0 0 0;
     }
    
+    
+
+    nav ul li a {
+      
+        font-size: 80%;
+        padding: .5em;
+        }
+    
     a{
         justify-content: center;
     }
