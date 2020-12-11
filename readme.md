@@ -7,6 +7,8 @@ Professional Portfolio
 
 ## Table of Contents
 - [Description](#description)
+- [Website Image](#website-image)
+- [Website Link](#website-link)
 - [Help](#Help)
 - [Authors](#Authors)
 - [Built With](#Built-With)
@@ -16,6 +18,14 @@ Professional Portfolio
 ## Description
 
 This is the second weekly challenge assignment.  In this challenge, we are tasked to create a professional looking portfolio website for potential job recruiters to view.
+
+
+## Website Image
+<img src="Assets\MWP-Portfolio-ScreenCapture.png">
+
+## Website Link
+
+("https://mwpx777.github.io/Mark-Peterson-Portfolio/")
 
 ## Help
 
