@@ -1,8 +1,8 @@
 # Project Title
 
-Weekly Challenge #1 12.01.20
+Weekly Challenge #2 12.10.20
 
-Code Refactor
+Professional Portfolio
 
 
 ## Table of Contents
@@ -15,7 +15,7 @@ Code Refactor
 
 ## Description
 
-This is the first weekly challenge assignment.  In this challenge, we are tasked to reformat existing html and css code to match a sample image of a website.
+This is the second weekly challenge assignment.  In this challenge, we are tasked to create a professional looking portfolio website for potential job recruiters to view.
 
 ## Help
 
@@ -35,18 +35,16 @@ Please direct any issues or problems to mwpx777@gmail.com
 
 ## Built With
 
- VScode
-
- [VS Code](https://code.visualstudio.com/)
+  [VS Code](https://code.visualstudio.com/)
 	
 
 ## Version History
 
 * 0.1
-    * Initial Release 12.01.20
+    * Initial Release 12.10.20
 
 
 ## Acknowledgments
 
-Inspiration, code snippets, etc.
- [awesome-readme](https://github.com/matiassingers/awesome-readme)
+[Grid Layoutit](https://grid.layoutit.com/)
+
