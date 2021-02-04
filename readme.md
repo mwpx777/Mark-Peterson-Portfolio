@@ -21,7 +21,7 @@ This is the second weekly challenge assignment.  In this challenge, we are taske
 
 
 ## Website Image
-<img src="Assets\MWP-Portfolio-ScreenCapture.png">
+<img src="Assets\MWP-Portfolio-ScreenCapture.png" alt="website Image">
 
 ## Website Link
 
